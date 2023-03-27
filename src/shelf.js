@@ -1,6 +1,8 @@
+function shelfBook() {
 
+}
 module.exports = {
-  // shelfBook,
+  shelfBook,
   // unshelfBook,
   // listTitles,
   // searchShelf
