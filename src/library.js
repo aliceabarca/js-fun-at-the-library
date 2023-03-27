@@ -36,9 +36,9 @@ function checkoutBook( library, title, shelf) {
   function takeStock(library) {
     var countStock = 0;
     for(var i = 0; i < Object.keys(library.shelves).length; i++) {
-     countStock = countStock + Object.values(library.shelves)[i].length; 
+     countStock = Object.values(library.shelves)[i].length + countStock; 
     }
-    return `There are a total of ${countStock} fantasy books at the ${library.name}.`
+    return `There are a total of ${countStock} books at the ${library.name}.`
   }
 
 
